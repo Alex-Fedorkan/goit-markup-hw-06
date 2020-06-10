@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style-bem.css" />
+    <title>Web Studio</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container">
+        <nav class="page-header__nav">
+          <a class="logo page-header__logo" href="./index.html"
+            >Web <span class="logo__word">Studio</span></a
+          >
+          <ul class="page-header__list">
+            <li class="page-header__item">
+              <a class="page-header__link" href="./index.html">Студия</a>
+            </li>
+            <li class="page-header__item">
+              <a
+                class="page-header__link page-header__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="page-header__item">
+              <a class="page-header__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <a
+            class="contacts__link"
+            href="mailto:info@devstudio.com"
+            aria-label="Написать письмо"
+          >
+            <svg class="contacts__icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+          <a
+            class="contacts__link"
+            href="tel:+380991111111"
+            aria-label="Позвонить"
+          >
+            <svg class="contacts__icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +38 099 111 11 11
+          </a>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="section-portfolio">
+        <div class="section-portfolio__container">
+          <h1 class="section-portfolio__title--visually-hidden">Портфолио</h1>
+          <div class="section-portfolio__row">
+            <button class="section-portfolio__btn" type="button">Все</button>
+            <button class="section-portfolio__btn" type="button">
+              Веб-сайты
+            </button>
+            <button class="section-portfolio__btn" type="button">
+              Приложения
+            </button>
+            <button class="section-portfolio__btn" type="button">Дизайн</button>
+            <button class="section-portfolio__btn" type="button">
+              Маркетинг
+            </button>
+          </div>
+          <ul class="section-portfolio__list">
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    src="./images/techcrack.jpg"
+                    alt="Ноутбук с открытой веб страницей"
+                    width="370"
+                  />
+                  <p class="link-card__desc">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Технокряк</h2>
+                  <p class="link-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    src="./images/poster-nba.jpg"
+                    alt="Два баскедболиста с мячом"
+                    width="370"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="link-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    src="./images/seafood.jpg"
+                    alt="Название ресторана на фоне рыбы"
+                    width="370"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Ресторан Seafood</h2>
+                  <p class="link-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img src="./images/prime.jpg" alt="Наушники" width="370" />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Проект Prime</h2>
+                  <p class="link-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img src="./images/boxes.jpg" alt="Две коробки" width="370" />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Проект Boxes</h2>
+                  <p class="link-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img src="./images/monitor.jpg" alt="Монитор" width="370" />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Inspiration has no Borders</h2>
+                  <p class="link-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    src="./images/limited-edition.jpg"
+                    alt="Журнальный разворот"
+                    width="370"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Издание Limited Edition</h2>
+                  <p class="link-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    src="./images/lab.jpg"
+                    alt="Надпись на медальйоне"
+                    width="370"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Проект LAB</h2>
+                  <p class="link-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="section-portfolio__item">
+              <a class="link-card" href="">
+                <div class="link-card__top">
+                  <img
+                    src="./images/notebook.jpg"
+                    alt="Открытый ноутбук"
+                    width="370"
+                  />
+                  <p class="link-card__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur non minima autem? Ea necessitatibus consequatur
+                    delectus. Iure odio alias dolore!
+                  </p>
+                </div>
+                <div class="link-card__bottom">
+                  <h2 class="link-card__title">Growing Business</h2>
+                  <p class="link-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__row">
+          <div>
+            <a class="logo page-footer__logo" href="./index.html"
+              >Web <span class="logo__word logo__word--inverse">Studio</span></a
+            >
+            <address class="address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <a class="address__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="address__link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+          <div>
+            <p class="page-footer__text">присоединяйтесь</p>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__link"
+                  href="https://www.instagram.com/"
+                  aria-label="Ссылка на Instagram"
+                >
+                  <svg class="page-footer__icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__link"
+                  href="https://twitter.com/"
+                  aria-label="Ссылка на Twitter"
+                >
+                  <svg class="page-footer__icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__link"
+                  href="https://facebook.com/"
+                  aria-label="Ссылка на Facebook"
+                >
+                  <svg class="page-footer__icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-footer__item">
+                <a
+                  class="page-footer__link"
+                  href="https://www.linkedin.com/"
+                  aria-label="Ссылка на LinkedIn"
+                >
+                  <svg class="page-footer__icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form>
+            <label class="form-subscribe__text" for="form-mail"
+              >Подпишитесь на рассылку</label
+            >
+            <input
+              class="form-subscribe__input"
+              id="form-mail"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="form-subscribe__btn" type="submit">
+              Подписаться
+              <svg class="form-subscribe__icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <p class="copyright">2020 | Developed by GoIT Students</p>
+      </div>
+    </footer>
+  </body>
+</html>
