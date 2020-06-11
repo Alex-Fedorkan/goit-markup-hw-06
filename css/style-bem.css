@@ -263,10 +263,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.section-hero__button:focus {
-  outline: none;
-}
-
 /* Modal */
 
 .modal__backdrop {
@@ -327,24 +323,32 @@ img {
 
 .field-box__icon {
   position: absolute;
-  top: 14px;
-  left: 19px;
+  top: 50%;
+  left: 16px;
 
   fill: var(--title-text-color);
 
+  transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .field-box__label {
   position: absolute;
-  top: 13px;
+  top: 50%;
   left: 43px;
 
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 
+  transform: translateY(-50%);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-box {
+  position: relative;
+
+  margin-bottom: 20px;
 }
 
 .comment-box__label {
@@ -354,7 +358,7 @@ img {
 
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -372,12 +376,6 @@ img {
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.comment-box {
-  position: relative;
-
-  margin-bottom: 20px;
 }
 
 .comment-box__input {
@@ -398,11 +396,6 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.field-box__input:focus,
-.comment-box__input:focus {
-  outline: none;
-}
-
 .field-box__input:focus ~ .field-box__icon {
   fill: var(--accent-color);
 }
@@ -412,7 +405,7 @@ img {
   line-height: 1.17;
   color: var(--accent-color);
 
-  transform: translate(-26px, -200%);
+  transform: translate(-26px, -36px);
 }
 
 .comment-box__input:focus + .comment-box__label {
@@ -420,20 +413,20 @@ img {
   line-height: 1.17;
   color: var(--accent-color);
 
-  transform: translateY(-200%);
+  transform: translateY(-28px);
 }
 
-.field-box__input--filled + .field-box__label {
+.field-box__input:not(:placeholder-shown) + .field-box__label {
   font-size: 12px;
   line-height: 1.17;
 
-  transform: translate(-26px, -200%);
+  transform: translate(-26px, -36px);
 }
-.comment-box__input--filled + .comment-box__label {
+.comment-box__input:not(:placeholder-shown) + .comment-box__label {
   font-size: 12px;
   line-height: 1.17;
 
-  transform: translateY(-200%);
+  transform: translateY(-28px);
 }
 
 .field-box__input:focus,
@@ -442,10 +435,46 @@ img {
 }
 
 .check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
-.check-box__label {
+.check-box__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.check-box__icon {
+  display: inline-block;
+  margin-right: 8px;
+
+  --color1: var(--title-text-color);
+  --color3: transparent;
+
+  border-radius: 2px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-box__input:checked + .check-box__icon {
+  --color1: var(--accent-color);
+  --color3: var(--primary-bg-color);
+
+  background-color: var(--accent-color);
+
+  border-radius: 2px;
+}
+
+.check-box__text {
   line-height: 1.71;
 }
 
@@ -469,10 +498,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal__send-button:focus {
-  outline: none;
-}
-
 .modal__close-button {
   position: absolute;
   top: 0;
@@ -493,10 +518,6 @@ img {
   border-radius: 50%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-}
-
-.modal__close-button:focus {
-  outline: none;
 }
 
 /* Advantages */
@@ -910,10 +931,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe__input:focus {
-  outline: none;
-}
-
 .form-subscribe__btn {
   display: inline-flex;
   align-items: center;
@@ -932,10 +949,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-}
-
-.form-subscribe__btn:focus {
-  outline: none;
 }
 
 .form-subscribe__icon-send {
@@ -994,8 +1007,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
-
-  outline: none;
 }
 
 .section-portfolio__list {
