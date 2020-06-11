@@ -549,7 +549,7 @@
             <input
               class="form-subscribe__input"
               id="form-mail"
-              name="email"
+              name="subscribe-email"
               type="email"
               placeholder="E-mail"
             />
@@ -572,10 +572,16 @@
           <div class="field-box">
             <input class="field-box__input" type="text" name="name" id="name" />
             <label class="field-box__label" for="name">Имя</label>
+            <svg class="field-box__icon" width="12" height="12">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
           </div>
           <div class="field-box">
             <input class="field-box__input" type="tel" name="tel" id="tel" />
             <label class="field-box__label" for="tel">Телефон</label>
+            <svg class="field-box__icon" width="13" height="13">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="field-box">
             <input
@@ -585,6 +591,9 @@
               id="mail"
             />
             <label class="field-box__label" for="mail">Почта</label>
+            <svg class="field-box__icon" width="15" height="12">
+              <use href="./images/sprite.svg#icon-mail"></use>
+            </svg>
           </div>
           <div class="comment-box">
             <textarea
@@ -596,7 +605,7 @@
           </div>
           <div class="check-box">
             <input type="checkbox" name="terms" value="agree" id="agree" />
-            <label class="check-box__label" for="terms"
+            <label class="check-box__label" for="agree"
               >Согласен с рассылкой и принимаю
               <a class="check-box__link" href="">Условия договора</a></label
             >
